@@ -194,8 +194,8 @@ void printData() {
 void normal()
 {
   // green led 
-  WiFiDrv::analogWrite(25, 0); 
-  WiFiDrv::analogWrite(26, 255); //green LED switched on
+  WiFiDrv::analogWrite(25, 255); //green LED switched on
+  WiFiDrv::analogWrite(26, 0); 
   WiFiDrv::analogWrite(27, 0);
 }
 
@@ -230,8 +230,8 @@ void hospital()
 void patient()
 {
   // red led
-  WiFiDrv::analogWrite(25, 255);//red LED switched on
-  WiFiDrv::analogWrite(26, 0); 
+  WiFiDrv::analogWrite(25, 0);
+  WiFiDrv::analogWrite(26, 255); //red LED switched on
   WiFiDrv::analogWrite(27, 0);
   // buzzer  
   buzzer_ring(2000, 6000);
